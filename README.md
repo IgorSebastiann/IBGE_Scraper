@@ -2,8 +2,6 @@
 
 Este projeto é um robô de automação de processos (RPA) desenvolvido com **UiPath Studio**. O objetivo é extrair dados públicos de municípios brasileiros diretamente do portal [IBGE Cidades](https://cidades.ibge.gov.br/) e consolidá-los de forma organizada.
 
-Este robô foi criado como solução para um desafio técnico para uma vaga de Desenvolvedor RPA.
-
 ## ✨ Funcionalidades Principais
 
 * **Entrada de Dados Flexível:** Solicita ao usuário uma lista de um ou mais municípios, separados por vírgula.
