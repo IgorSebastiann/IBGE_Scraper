@@ -1,0 +1,325 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,3169" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="municipiosInput" />
+      <Variable x:TypeArguments="s:String[]" Name="listaMunicipios" />
+      <Variable x:TypeArguments="x:String" Name="textoFormatado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="538,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Digite o nome de um ou mais municípios, separados por vírgula (,)." Title="Digite os Municípios">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[municipiosInput]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="538,115" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[listaMunicipios]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[municipiosInput.Split(","c)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each municipio" sap:VirtualizedContainerService.HintSize="538,2756" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[listaMunicipios]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="municipio" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="536,2634" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome cidades.ibge.gov.br" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="502,2574" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="e8633c32-035e-4b64-ae65-ef868abe56c6" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,2293" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="prefeito" />
+                      <Variable x:TypeArguments="x:String" Name="populacao" />
+                      <Variable x:TypeArguments="x:String" Name="aniversario" />
+                      <Variable x:TypeArguments="x:String" Name="area" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GovBR'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br" CVScreenId="e2898589-d02d-497f-9187-6963ad1b489b" ContentHash="5drFKJmHgky56IU-l9AhxQ" CvElementArea="8, 262, 145, 52" CvTextArea="71, 278, 55, 17" CvTextArgument="MENU" CvType="Button" DesignTimeRectangle="-7, 265, 158, 46" FullSelectorArgument="&lt;webctrl id='abaMenuLateral' tag='DIV' /&gt;" Guid="5954fd2a-524a-429e-ad48-3bfa6bedad99" InformativeScreenshot="1beb55faad74518d16dbba2902a2d06a.png" Reference="Na26xdSkUkCXbVxs7D7k3g/sQWEGL0FWk2IdwcGws0jKA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="e2898589-d02d-497f-9187-6963ad1b489b" CvTextArea="145, 190, 52, 21" CvTextArgument="govbr" CvType="Text" DesignTimeRectangle="146, 192, 50, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='pic-gov' tag='A' type='' aaname='GovBR' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='GOVBR' /&gt;" Guid="e077a83c-4d6e-43c5-8408-924c7719f20a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Selecionar local'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br" CVScreenId="1743dfe6-f3da-4505-bb1b-55eea67e6549" ContentHash="s0yBs8i5mku_PC_cB1pfAQ" CvElementArea="273, 421, 19, 22" CvTextArea="24, 426, 70, 17" CvTextArgument="Municípios" CvType="ArrowButton" DesignTimeRectangle="8, 410, 299, 43" ElementType="ListItem" FullSelectorArgument="&lt;webctrl id='menu__municipio' tag='LI' /&gt;" Guid="89443f27-505a-4e62-b896-49b177ab2b70" InformativeScreenshot="f80fef345362be64bb99745caaf6b0ae.png" Reference="Na26xdSkUkCXbVxs7D7k3g/kHREQYP7Sk6IMkcb5aUhPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="1743dfe6-f3da-4505-bb1b-55eea67e6549" CvTextArea="24, 275, 141, 18" CvTextArgument="Selecionar local" CvType="Text" DesignTimeRectangle="8, 274, 299, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='selecionar-localidade__titulo' parentid='primeira-coluna' tag='DIV' type='' aaname='             Selecionar local         ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Selecionar local' /&gt;" Guid="cf3aa597-4821-4017-a949-092388ca2a34" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Todos os municípios'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" Text="[municipio]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br" CVScreenId="2fc86750-6a58-45f7-a5f8-7260cee792ea" ContentHash="AgcRgi6aREWSZPTo62DF8g" CvElementArea="752, 269, 643, 32" CvType="InputBox" DesignTimeRectangle="754, 270, 642, 31" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='busca' tag='INPUT' type='text' class='' placeholder='Qual município você procura?' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7dfd176e-aa2c-437b-89eb-36947b27bddd" InformativeScreenshot="e16bb0781992ea52cd47b1b99675eed9.png" IsResponsive="True" Reference="Na26xdSkUkCXbVxs7D7k3g/iaSJtPwIckuz8a3cKoCiZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="2fc86750-6a58-45f7-a5f8-7260cee792ea" CvTextArea="753, 241, 146, 17" CvTextArgument="Todos oS municípios" CvType="Text" DesignTimeRectangle="754, 240, 145, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Todos os municípios' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Todos os municípios' /&gt;" Guid="4ac0784a-cc48-4579-a9e1-c005e52b37e0" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Jaraguá do Sul SC'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br" CVScreenId="b3a2a892-f095-456b-a0b3-8a4b19639d26" ContentHash="Q_8BDj5-VUeEIpFDWv9jJw" CvElementArea="858, 346, 30, 25" CvTextArea="752, 349, 129, 17" CvTextArgument="Jaraguá do Sul sc" CvType="Button" DesignTimeRectangle="754, 349, 642, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='todos-municipios' tag='A' /&gt;" Guid="49d28978-99fa-4db5-bd26-8a9f00936808" InformativeScreenshot="def1fe489b85aa9a11d2beb955e62ec7.png" Reference="Na26xdSkUkCXbVxs7D7k3g/tdHdJcPHkEGOqiOPeXONTA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="754, 223, 642, 153" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='por-estado__selecionar-municipio' parentid='terceira-coluna' tag='DIV' /&gt;" Guid="d7037d1c-2cad-41c6-bff0-28a6f8899f88" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Prefeito'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" TextString="[prefeito]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama" CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" ContentHash="XKtlksLDaEOlTJfPtW9ZLw" CvType="AnyWordGroup" DesignTimeRectangle="278, 403, 402, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app&amp;gt;shell&amp;gt;div&amp;gt;div&amp;gt;panorama-shell&amp;gt;div&amp;gt;section&amp;gt;panorama-resumo&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='3' tag='P' /&gt;" Guid="2c77877a-d135-4c79-a98c-d39fabf16364" InformativeScreenshot="eab42e3d8f1a7841e4fbb135c2c9f5a0.png" Reference="Na26xdSkUkCXbVxs7D7k3g/cI_QhO3BdkG_hcco-Vc6UA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" CvTextArea="277, 388, 50, 13" CvTextArgument="Prefeito" CvType="Text" DesignTimeRectangle="277, 388, 50, 13" ElementType="Text" Guid="59a2087b-4c5b-4978-b77e-3b06cc824274" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'População no último cen…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" TextString="[populacao]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama" CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" ContentHash="vjQ2RQnhCUWnj_F_2_BWyg" CvType="AnyWordGroup" DesignTimeRectangle="563, 492, 58, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" Guid="f07c347b-5fcc-4238-9545-80f0040d3e16" InformativeScreenshot="9aad945cbcc95678cf0a5f56b7a18578.png" Reference="Na26xdSkUkCXbVxs7D7k3g/pNOzEHvX9E2c5LFEY9_ctg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" CvTextArea="311, 495, 198, 16" CvTextArgument="População no último censo [2022]" CvType="Text" DesignTimeRectangle="307, 487, 251, 30" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          População no último censo                                                           ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='População no último censo [2022]' /&gt;" Guid="6d707c0a-15fb-46a0-9b73-8741f452c205" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get Text 'Aniversário'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" TextString="[aniversario]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama" CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" ContentHash="NJx4n5_Y_EyNhGWIeaPs8g" CvType="AnyWordGroup" DesignTimeRectangle="579, 332, 101, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app&amp;gt;shell&amp;gt;div&amp;gt;div&amp;gt;panorama-shell&amp;gt;div&amp;gt;section&amp;gt;panorama-resumo&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' /&gt;" Guid="d9f60183-e035-47d8-9362-b0439e84b0bc" InformativeScreenshot="ef63a5462a3b2b99f8d56689b75a6567.png" Reference="Na26xdSkUkCXbVxs7D7k3g/DnKVpqf1jkOv_20HaUOxPw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="afc2f4f1-c11b-4ae3-a2f5-2ccc91a8977f" CvTextArea="577, 316, 73, 14" CvTextArgument="Aniversário" CvType="Text" DesignTimeRectangle="579, 316, 101, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='topo__titulo' isleaf='1' tag='H3' type='' aaname='                         Aniversário                     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Aniversário' /&gt;" Guid="ea6fb86c-89d4-484b-8116-fa7da6245362" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Território'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama" CVScreenId="f05a467d-8048-476e-a9bb-9002c2b01559" ContentHash="YLlYsVLIyUa1wIAMuYTjRQ" CvTextArea="301, 709, 87, 16" CvTextArgument="TERRITÓRIO" CvType="Text" DesignTimeRectangle="298, 698, 334, 41" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__titulo' tableRow='69' tag='TH' /&gt;" Guid="ee645e5f-a1ed-4b5b-acf7-01fc3d0632a5" InformativeScreenshot="18ecc47a2a2f8766bd9220920bb6b55d.png" Reference="Na26xdSkUkCXbVxs7D7k3g/CQ685_5xGkKVA6AiPJzBew" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="258, 698, 40, 41" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='69' tag='TH' /&gt;" Guid="a3993847-1335-44e4-8fa2-8f2290f28a20" SearchSteps="Selector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'Área da unidade territo…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="e8633c32-035e-4b64-ae65-ef868abe56c6" TextString="[area]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama" CVScreenId="fae8ccde-96d6-4adc-be66-b90ea1f6cec9" ContentHash="s30OvldHx0uoRtTmvtmcJg" CvType="AnyWordGroup" DesignTimeRectangle="555, 420, 58, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="af25b4a5-9810-4306-9d78-43dcd70d9c28" InformativeScreenshot="9af83d8475060143bc18939dbcc9202c.png" Reference="Na26xdSkUkCXbVxs7D7k3g/fg4xuGUQ802Es4Lr_AQxlw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cidades.ibge.gov.br/brasil/sc/jaragua-do-sul/panorama' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="fae8ccde-96d6-4adc-be66-b90ea1f6cec9" CvTextArea="302, 420, 190, 19" CvTextArgument="Área da unidade territorial [2024]" CvType="Text" DesignTimeRectangle="299, 415, 251, 30" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='lista__nome' type='' tag='TD' aaname='                                          Área da unidade territorial                                                           ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Área da unidade territorial [2024]' /&gt;" Guid="f048930b-09be-4866-98b4-4b6f1807d07d" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[textoFormatado]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[municipio.Trim + vbCrLf + "Prefeito: " + prefeito + vbCrLf + "População no último censo [2022]: " + populacao + vbCrLf + "Aniversário da cidade: " + aniversario + vbCrLf + "Área da unidade territorial [2023]: " + area + " km²" + vbCrLf]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="Dados_Municipios.txt" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[textoFormatado]" UseDefaultEncoding="False" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-1448, -8, 1456, 876" BrowserType="Chrome" ContentHash="3b-LRn2HR0uJc_PVMSp_zg" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_3" InformativeScreenshot="cbf93aac2e66ca26c185fecaa70db727.jpg" Reference="Na26xdSkUkCXbVxs7D7k3g/-7vRVOT_0kqQvSmHTPtN-g" Selector="&lt;html app='chrome.exe' title='cidades.ibge.gov.br' /&gt;" Url="https://cidades.ibge.gov.br/" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
